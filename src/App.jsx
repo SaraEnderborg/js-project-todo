@@ -1,5 +1,9 @@
+import { Home } from "./components/Home";
+
 export const App = () => {
   return (
-    <h1>React Boilerplate</h1>
-  )
-}
+    <>
+      <Home />
+    </>
+  );
+};
