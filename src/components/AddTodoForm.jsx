@@ -14,7 +14,7 @@ export const AddTodoForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} aria-label="Add new task form">
+    <form onSubmit={handleSubmit} aria-label="Add new todo form">
       <Stack
         direction={{ xs: "column", sm: "row" }}
         spacing={1}
@@ -37,7 +37,7 @@ export const AddTodoForm = () => {
           type="submit"
           variant="contained"
           sx={{ width: { xs: "100%", sm: "auto" } }}
-          aria-label="Add new task"
+          aria-label="Add new todo"
         >
           Add
         </Button>

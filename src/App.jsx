@@ -15,7 +15,7 @@ export const App = () => {
       <Container maxWidth="sm">
         <Paper elevation={2} sx={{ p: { xs: 2, sm: 3 } }}>
           <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
-            Todo App
+            Todo
           </Typography>
 
           <CountTodos />

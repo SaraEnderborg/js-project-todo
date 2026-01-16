@@ -15,7 +15,7 @@ export const TodoItem = ({ todo }) => {
         <IconButton
           edge="end"
           onClick={() => removeTodo(todo.id)}
-          aria-label={`Delete task: ${todo.text}`}
+          aria-label={`Delete todo: ${todo.text}`}
         >
           <DeleteIcon />
         </IconButton>

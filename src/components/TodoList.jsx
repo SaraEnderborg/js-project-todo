@@ -15,7 +15,7 @@ export const TodoList = () => {
       <Box sx={{ mt: 2 }}>
         <EmptyState
           icon="✅"
-          title="No tasks yet"
+          title="No todos yet"
           description="Add your first todo above to get started."
         />
       </Box>
@@ -33,10 +33,10 @@ export const TodoList = () => {
           <EmptyState
             icon="🎉"
             title="All caught up"
-            description="You have no uncompleted tasks right now."
+            description="You have no uncompleted todos right now."
           />
         ) : (
-          <List dense aria-label="Uncompleted tasks list">
+          <List dense aria-label="Uncompleted todos list">
             {uncompletedTodos.map((todo) => (
               <TodoItem key={todo.id} todo={todo} />
             ))}
@@ -52,11 +52,11 @@ export const TodoList = () => {
         {completedTodos.length === 0 ? (
           <EmptyState
             icon="⏳"
-            title="No completed tasks yet"
-            description="Complete a task to see it here."
+            title="No completed todos yet"
+            description="Complete a todo to see it here."
           />
         ) : (
-          <List dense aria-label="Completed tasks list">
+          <List dense aria-label="Completed todos list">
             {completedTodos.map((todo) => (
               <TodoItem key={todo.id} todo={todo} />
             ))}
